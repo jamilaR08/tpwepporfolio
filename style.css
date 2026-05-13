@@ -8,10 +8,19 @@ nav a {
   text-decoration: none;
   color:black;
 }
-
 li{
     list-style: none;
     font-family: 'Courier New', Courier, monospace;
 
 
+}
+@media (max-width: 768px) {
+  nav {
+    display: flex;
+    flex-direction: column;
+  }
+
+  section {
+    padding: 20px;
+  }
 }
