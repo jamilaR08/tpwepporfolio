@@ -1,7 +1,8 @@
-nav{
+nav {
     display: flex;
+    flex-direction: row; 
     justify-content: space-around;
-    
+    align-items: center;
 }
 nav a {
   margin: 0 10px;
@@ -14,13 +15,13 @@ li{
 
 
 }
-@media (max-width: 768px) {
-  nav {
-    display: flex;
-    flex-direction: column;
-  }
+@media screen and (max-width: 500px) {
+    nav {
+        flex-direction: column; /* Bascule en colonne */
+        gap: 15px; /* Ajoute de l'espace entre les liens empilés */
+    }
 
-  section {
-    padding: 20px;
-  }
+    section {
+        padding: 20px;
+    }
 }
