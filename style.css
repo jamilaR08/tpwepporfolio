@@ -1,27 +1,66 @@
-nav {
+* Réinitialisation simple */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Centrer le formulaire dans la page */
+body {
+    font-family: Arial, sans-serif;
+    background-color:aqua;
+    height: 100vh;
     display: flex;
-    flex-direction: row; 
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
 }
-nav a {
-  margin: 0 10px;
-  text-decoration: none;
-  color:black;
+
+/* Conteneur du formulaire */
+.form {
+    background-color :bisque;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    width: 350px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
 }
-li{
-    list-style: none;
-    font-family: 'Courier New', Courier, monospace;
 
-
+/* Titre */
+.form h1 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 10px;
 }
-@media screen and (max-width: 500px) {
-    nav {
-        flex-direction: column; /* Bascule en colonne */
-        gap: 15px; /* Ajoute de l'espace entre les liens empilés */
-    }
 
-    section {
-        padding: 20px;
-    }
+/* Champs input */
+.form input {
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 16px;
+    outline: none;
+}
+
+/* Effet quand on clique sur input */
+.form input:focus {
+    border-color: #007bff;
+}
+
+/* Bouton */
+.form button {
+    padding: 12px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+/* Effet hover */
+.form button:hover {
+    background-color: #0056b3;
 }
