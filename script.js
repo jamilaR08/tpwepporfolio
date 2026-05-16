@@ -15,5 +15,15 @@ button.addEventListener("click", function(event){
     console.log(nom.value);
     console.log(email.value);
     console.log(password.value);
+
+const user={
+    name: nom.value,
+    email: email.value,
+    password: password.value
+};
+localStorage.setItem('user',JSON.stringify(user));
+
+
     alert("Name: " + nom.value + "\nEmail: " + email.value + "\nPassword: " + password.value);
 });
+
