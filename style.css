@@ -1,66 +1,39 @@
-* Réinitialisation simple */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+h1{
+    text-align: center;
 }
 
-/* Centrer le formulaire dans la page */
-body {
-    font-family: Arial, sans-serif;
-    background-color: bisque;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-/* Conteneur du formulaire */
-.form {
-    background-color :bisque;
-    padding: 30px;
-    border-radius: 12px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-    width: 350px;
+.form
+.formConnexion{
     display: flex;
     flex-direction: column;
-    gap: 15px;
+    gap: 10px;
+    align-items: center;
+        display: none;
+
 }
 
-/* Titre */
-.form h1 {
-    text-align: center;
-    color: #333;
-    margin-bottom: 10px;
+.formInsription{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    display: none;
 }
 
-/* Champs input */
-.form input {
-    padding: 12px;
-    border: 1px solid #ccc;
-    border-radius: 8px;
-    font-size: 16px;
-    outline: none;
+nav{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
 }
 
-/* Effet quand on clique sur input */
-.form input:focus {
-    border-color: #007bff;
-}
-
-/* Bouton */
-.form button {
-    padding: 12px;
-    background-color: #007bff;
-    color: white;
-    border: none;
-    border-radius: 8px;
+nav button {
+    padding: 5px 10px;
     font-size: 16px;
     cursor: pointer;
-    transition: 0.3s;
+    border-radius: 10px;
+    background-color: aquamarine;
+    border: none;
 }
-
-/* Effet hover */
-.form button:hover {
-    background-color: #0056b3;
+body{
+    background-color: pink;
 }
